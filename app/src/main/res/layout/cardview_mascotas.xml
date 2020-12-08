@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/myCV"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_gravity="center_horizontal"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearImg"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/imgFoto"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:src="@drawable/mascota1"/>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/rlTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/linearImg">
+
+            <ImageView
+                android:id="@+id/ivHueso"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/hueso"/>
+            <TextView
+                android:id="@+id/tvNombreCV"
+                android:layout_width="wrap_content"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre"
+                android:textSize="50dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:id="@+id/tvFav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contador"
+                android:layout_toLeftOf="@id/huelo_amarillo"
+                android:layout_centerVertical="true"
+                android:textSize="50dp"/>
+
+            <ImageView
+                android:id="@+id/huelo_amarillo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:layout_margin="10dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/hueso_amarillo" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
